@@ -20,29 +20,30 @@ class Chart extends Component {
                         'rgba(153, 102, 255, 0.2)'
                     ],
                 }
-            ]},
-                options:{
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
-                }
-            }
-        }
-    
+            ]}
+        } 
+    }
     render () {
         return (
             <div className='chart'>
                 < Bar 
                     data={this.state.chartData}
-                    width={500}
-                    height={500}
-                    options={{ maintainAspectRatio:false}}
+                    width={50}
+                    height={400}
+                    options={{ 
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                                }
+                            }]},
+                        maintainAspectRatio:false
+                    }
+                    }
                 />
             </div>
+            
+            
         )
     }
 }
