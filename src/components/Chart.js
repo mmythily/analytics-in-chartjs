@@ -19,6 +19,12 @@ class Chart extends Component {
                         'rgba(75, 192, 192, 0.2)',
                         'rgba(153, 102, 255, 0.2)'
                     ],
+                },
+                {
+                    type:'line',
+                    label:'GIVs this week',
+                    data:[2,3,1,4,4,1]
+                    
                 }
             ]}
         } 
